@@ -73,7 +73,7 @@ describe('link[preload] should handle dynamically added links', function() {
 
 
                 if(!window.MutationObserver || attr != 'preload'){
-                    linkPreloadPolyfill.default.run(attr);
+                    linkPreloadPolyfill.run(attr);
                 }
             });
 
@@ -112,7 +112,7 @@ describe('link[preload] should handle dynamically added links', function() {
                 }, 22);
 
                 if(!window.MutationObserver || attr != 'preload'){
-                    linkPreloadPolyfill.default.run(attr);
+                    linkPreloadPolyfill.run(attr);
                 }
             });
         });
@@ -158,7 +158,7 @@ describe('link[preload] should handle media attribute', function() {
 
 
                 if(!window.MutationObserver || attr != 'preload'){
-                    linkPreloadPolyfill.default.run(attr);
+                    linkPreloadPolyfill.run(attr);
                 }
             });
 
@@ -193,7 +193,7 @@ describe('link[preload] should handle media attribute', function() {
                 }, 150);
 
                 if(!window.MutationObserver || attr != 'preload'){
-                    linkPreloadPolyfill.default.run(attr);
+                    linkPreloadPolyfill.run(attr);
                 }
             });
         });
